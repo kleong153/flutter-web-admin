@@ -3,7 +3,7 @@
 Responsive web with light/dark mode and multi language supported.
 
 ## Live Preview
-[Website](https://)
+[Website](https://kcflutterwebadmin.surge.sh)
 
 The objective of this project is to develop an admin portal website with Flutter V3.
 
@@ -27,6 +27,7 @@ The objective of this project is to develop an admin portal website with Flutter
 - Performance. You will face UI jank on complex webpage.
 - Cannot inspect elements. As a web developer, we often use the web browser's developer tools to inspect elements in webpage, but unfortunately we can't do this with Flutter Web due to everything is draw on canvas. Wait, maybe it is also a good thing as nobody can copy/claw your content 🤔?
 - No text selection, right click context menu, horizontal scrolling with mouse wheel support by default.
+- Text/font rendering issue and UI blurry on PWA/desktop web browser.
 
 Overall, this project development experience was pleasant for me. And I'm looking forward to seeing how Flutter Web will evolve in future releases.
 
