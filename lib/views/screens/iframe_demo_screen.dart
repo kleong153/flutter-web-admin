@@ -41,7 +41,7 @@ class _IFrameDemoScreenState extends State<IFrameDemoScreen> {
         children: [
           Text(
             lang.iframeDemo,
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -61,7 +61,7 @@ class _IFrameDemoScreenState extends State<IFrameDemoScreen> {
                           padding: const EdgeInsets.only(bottom: kDefaultPadding),
                           child: Text(
                             '${lang.example} 1',
-                            style: themeData.textTheme.subtitle1,
+                            style: themeData.textTheme.titleMedium,
                           ),
                         ),
                         _pointerInterceptedIFrame('https://www.youtube.com/embed/rCugckXUC8M/', iframeHeight, iframeWidth),
@@ -72,7 +72,7 @@ class _IFrameDemoScreenState extends State<IFrameDemoScreen> {
                           ),
                           child: Text(
                             '${lang.example} 2',
-                            style: themeData.textTheme.subtitle1,
+                            style: themeData.textTheme.titleMedium,
                           ),
                         ),
                         _pointerInterceptedIFrame('https://www.lipsum.com/', iframeHeight, iframeWidth),
@@ -83,7 +83,7 @@ class _IFrameDemoScreenState extends State<IFrameDemoScreen> {
                           ),
                           child: Text(
                             '${lang.example} 3',
-                            style: themeData.textTheme.subtitle1,
+                            style: themeData.textTheme.titleMedium,
                           ),
                         ),
                         _pointerInterceptedIFrame('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50704.09814353644!2d-122.11637223349575!3d37.413329910198634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sMountain%20View%2C%20CA%2C%20USA!5e0!3m2!1sen!2smy!4v1655050103494!5m2!1sen!2smy', iframeHeight, iframeWidth),

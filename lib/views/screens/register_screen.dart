@@ -39,7 +39,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
       setState(() => _isFormLoading = true);
 
-      Future.delayed(const Duration(seconds: 2), () async {
+      Future.delayed(const Duration(seconds: 1), () async {
         if (_formData.username == 'admin') {
           onError.call('This username is already taken.');
         } else {
@@ -59,7 +59,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   void _onRegisterSuccess(BuildContext context, String message) {
     final dialog = AwesomeDialog(
       context: context,
-      dialogType: DialogType.SUCCES,
+      dialogType: DialogType.success,
       desc: message,
       width: kDialogWidth,
       btnOkText: Lang.of(context).loginNow,
@@ -72,7 +72,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   void _onRegisterError(BuildContext context, String message) {
     final dialog = AwesomeDialog(
       context: context,
-      dialogType: DialogType.ERROR,
+      dialogType: DialogType.error,
       desc: message,
       width: kDialogWidth,
       btnOkText: 'OK',
@@ -117,7 +117,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                     Text(
                       lang.appTitle,
-                      style: themeData.textTheme.headline4!.copyWith(
+                      style: themeData.textTheme.headlineMedium!.copyWith(
                         fontWeight: FontWeight.w600,
                       ),
                     ),

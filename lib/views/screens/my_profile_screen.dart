@@ -23,7 +23,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
   Future<bool>? _future;
 
   Future<bool> _getDataAsync() async {
-    await Future.delayed(const Duration(seconds: 2), () {
+    await Future.delayed(const Duration(seconds: 1), () {
       _formData.userProfileImageUrl = 'https://picsum.photos/id/1005/300/300';
       _formData.username = 'Admin ABC';
       _formData.email = 'adminabc@email.com';
@@ -42,7 +42,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
 
       final dialog = AwesomeDialog(
         context: context,
-        dialogType: DialogType.SUCCES,
+        dialogType: DialogType.success,
         title: lang.recordSavedSuccessfully,
         width: kDialogWidth,
         btnOkText: 'OK',
@@ -64,7 +64,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
         children: [
           Text(
             lang.myProfile,
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -200,7 +200,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                       padding: const EdgeInsets.only(right: kDefaultPadding * 0.5),
                       child: Icon(
                         Icons.save_rounded,
-                        size: (themeData.textTheme.button!.fontSize! + 4.0),
+                        size: (themeData.textTheme.labelLarge!.fontSize! + 4.0),
                       ),
                     ),
                     Text(lang.save),

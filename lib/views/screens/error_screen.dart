@@ -46,7 +46,7 @@ class ErrorScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(right: kDefaultPadding),
                 child: Text(
                   '404',
-                  style: themeData.textTheme.headline2!.copyWith(
+                  style: themeData.textTheme.displayMedium!.copyWith(
                     color: appColorScheme.warning,
                   ),
                 ),
@@ -61,7 +61,7 @@ class ErrorScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: kDefaultPadding * 0.5),
                       child: Text(
                         lang.error404Title,
-                        style: themeData.textTheme.headline6!.copyWith(
+                        style: themeData.textTheme.titleLarge!.copyWith(
                           color: appColorScheme.warning,
                         ),
                       ),

@@ -127,8 +127,8 @@ class PortalMasterLayout extends StatelessWidget {
           provider.setThemeModeAsync(themeMode: themeMode);
         },
         style: TextButton.styleFrom(
-          primary: themeData.colorScheme.onPrimary,
-          onSurface: themeData.extension<AppColorScheme>()!.primary,
+          foregroundColor: themeData.colorScheme.onPrimary,
+          disabledForegroundColor: themeData.extension<AppColorScheme>()!.primary.withOpacity(0.38),
           shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
         ),
         child: Selector<AppPreferencesProvider, ThemeMode>(
@@ -147,7 +147,7 @@ class PortalMasterLayout extends StatelessWidget {
               children: [
                 Icon(
                   icon,
-                  size: (themeData.textTheme.button!.fontSize! + 4.0),
+                  size: (themeData.textTheme.labelLarge!.fontSize! + 4.0),
                 ),
                 Visibility(
                   visible: isFullWidthButton,
@@ -189,7 +189,7 @@ class PortalMasterLayout extends StatelessWidget {
           children: [
             Icon(
               Icons.translate_rounded,
-              size: (Theme.of(context).textTheme.button!.fontSize! + 4.0),
+              size: (Theme.of(context).textTheme.labelLarge!.fontSize! + 4.0),
             ),
             Visibility(
               visible: (MediaQuery.of(context).size.width > kScreenWidthMd),

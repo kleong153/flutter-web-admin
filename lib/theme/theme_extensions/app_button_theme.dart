@@ -46,117 +46,118 @@ class AppButtonTheme extends ThemeExtension<AppButtonTheme> {
   factory AppButtonTheme.fromAppColorScheme(AppColorScheme appColorScheme) {
     return AppButtonTheme(
       primaryElevated: ElevatedButton.styleFrom(
-        primary: appColorScheme.primary,
-        onSurface: appColorScheme.primary,
+        backgroundColor: appColorScheme.primary,
+        disabledForegroundColor: appColorScheme.primary.withOpacity(0.38),
+        disabledBackgroundColor: appColorScheme.primary.withOpacity(0.12),
       ).withCommonButtonStyle(
         appColorScheme: appColorScheme,
       ),
       secondaryElevated: ElevatedButton.styleFrom(
-        primary: appColorScheme.secondary,
-        onSurface: appColorScheme.secondary,
+        backgroundColor: appColorScheme.secondary,
+        disabledForegroundColor: appColorScheme.secondary,
       ).withCommonButtonStyle(
         appColorScheme: appColorScheme,
       ),
       errorElevated: ElevatedButton.styleFrom(
-        primary: appColorScheme.error,
-        onSurface: appColorScheme.error,
+        backgroundColor: appColorScheme.error,
+        disabledForegroundColor: appColorScheme.error,
       ).withCommonButtonStyle(
         appColorScheme: appColorScheme,
       ),
       successElevated: ElevatedButton.styleFrom(
-        primary: appColorScheme.success,
-        onSurface: appColorScheme.success,
+        backgroundColor: appColorScheme.success,
+        disabledForegroundColor: appColorScheme.success,
       ).withCommonButtonStyle(
         appColorScheme: appColorScheme,
       ),
       infoElevated: ElevatedButton.styleFrom(
-        primary: appColorScheme.info,
-        onSurface: appColorScheme.info,
+        backgroundColor: appColorScheme.info,
+        disabledForegroundColor: appColorScheme.info,
       ).withCommonButtonStyle(
         appColorScheme: appColorScheme,
       ),
       warningElevated: ElevatedButton.styleFrom(
-        primary: appColorScheme.warning,
-        onSurface: appColorScheme.warning,
+        backgroundColor: appColorScheme.warning,
+        disabledForegroundColor: appColorScheme.warning,
       ).withCommonButtonStyle(
         appColorScheme: appColorScheme,
         normalButtonTextColor: appColorScheme.buttonTextBlack,
       ),
       primaryOutlined: OutlinedButton.styleFrom(
-        primary: appColorScheme.primary,
-        onSurface: appColorScheme.primary,
+        foregroundColor: appColorScheme.primary,
+        disabledForegroundColor: appColorScheme.primary,
       ).withCommonOutlinedButtonStyle(
         appColorScheme: appColorScheme,
         normalButtonTextColor: appColorScheme.primary,
       ),
       secondaryOutlined: OutlinedButton.styleFrom(
-        primary: appColorScheme.secondary,
-        onSurface: appColorScheme.secondary,
+        foregroundColor: appColorScheme.secondary,
+        disabledForegroundColor: appColorScheme.secondary,
       ).withCommonOutlinedButtonStyle(
         appColorScheme: appColorScheme,
         normalButtonTextColor: appColorScheme.secondary,
       ),
       errorOutlined: OutlinedButton.styleFrom(
-        primary: appColorScheme.error,
-        onSurface: appColorScheme.error,
+        foregroundColor: appColorScheme.error,
+        disabledForegroundColor: appColorScheme.error,
       ).withCommonOutlinedButtonStyle(
         appColorScheme: appColorScheme,
         normalButtonTextColor: appColorScheme.error,
       ),
       successOutlined: OutlinedButton.styleFrom(
-        primary: appColorScheme.success,
-        onSurface: appColorScheme.success,
+        foregroundColor: appColorScheme.success,
+        disabledForegroundColor: appColorScheme.success,
       ).withCommonOutlinedButtonStyle(
         appColorScheme: appColorScheme,
         normalButtonTextColor: appColorScheme.success,
       ),
       infoOutlined: OutlinedButton.styleFrom(
-        primary: appColorScheme.info,
-        onSurface: appColorScheme.info,
+        foregroundColor: appColorScheme.info,
+        disabledForegroundColor: appColorScheme.info,
       ).withCommonOutlinedButtonStyle(
         appColorScheme: appColorScheme,
         normalButtonTextColor: appColorScheme.info,
       ),
       warningOutlined: OutlinedButton.styleFrom(
-        primary: appColorScheme.warning,
-        onSurface: appColorScheme.warning,
+        foregroundColor: appColorScheme.warning,
+        disabledForegroundColor: appColorScheme.warning,
       ).withCommonOutlinedButtonStyle(
         appColorScheme: appColorScheme,
         normalButtonTextColor: appColorScheme.warning,
       ),
       primaryText: TextButton.styleFrom(
-        primary: appColorScheme.primary,
-        onSurface: appColorScheme.primary,
+        foregroundColor: appColorScheme.primary,
+        disabledForegroundColor: appColorScheme.primary,
       ).withCommonTextButtonStyle(
         appColorScheme: appColorScheme,
       ),
       secondaryText: TextButton.styleFrom(
-        primary: appColorScheme.secondary,
-        onSurface: appColorScheme.secondary,
+        foregroundColor: appColorScheme.secondary,
+        disabledForegroundColor: appColorScheme.secondary,
       ).withCommonTextButtonStyle(
         appColorScheme: appColorScheme,
       ),
       errorText: TextButton.styleFrom(
-        primary: appColorScheme.error,
-        onSurface: appColorScheme.error,
+        foregroundColor: appColorScheme.error,
+        disabledForegroundColor: appColorScheme.error,
       ).withCommonTextButtonStyle(
         appColorScheme: appColorScheme,
       ),
       successText: TextButton.styleFrom(
-        primary: appColorScheme.success,
-        onSurface: appColorScheme.success,
+        foregroundColor: appColorScheme.success,
+        disabledForegroundColor: appColorScheme.success,
       ).withCommonTextButtonStyle(
         appColorScheme: appColorScheme,
       ),
       infoText: TextButton.styleFrom(
-        primary: appColorScheme.info,
-        onSurface: appColorScheme.info,
+        foregroundColor: appColorScheme.info,
+        disabledForegroundColor: appColorScheme.info,
       ).withCommonTextButtonStyle(
         appColorScheme: appColorScheme,
       ),
       warningText: TextButton.styleFrom(
-        primary: appColorScheme.warning,
-        onSurface: appColorScheme.warning,
+        foregroundColor: appColorScheme.warning,
+        disabledForegroundColor: appColorScheme.warning,
       ).withCommonTextButtonStyle(
         appColorScheme: appColorScheme,
         normalButtonTextColor: appColorScheme.buttonTextBlack,

@@ -57,7 +57,7 @@ GoRouter appRouter(UserDataProvider userDataProvider) {
     routes: [
       GoRoute(
         path: RouteUri.home,
-        redirect: (state) => RouteUri.dashboard,
+        redirect: (context, state) => RouteUri.dashboard,
       ),
       GoRoute(
         path: RouteUri.dashboard,
@@ -152,7 +152,7 @@ GoRouter appRouter(UserDataProvider userDataProvider) {
         pageBuilder: (context, state) {
           return NoTransitionPage<void>(
             key: state.pageKey,
-            child: CrudDetailScreen(id: state.queryParams['id'] ?? ''),
+            child: CrudDetailScreen(id: state.queryParameters['id'] ?? ''),
           );
         },
       ),
@@ -164,10 +164,10 @@ GoRouter appRouter(UserDataProvider userDataProvider) {
         ),
       ),
     ],
-    redirect: (state) {
-      if (unrestrictedRoutes.contains(state.subloc)) {
+    redirect: (context, state) {
+      if (unrestrictedRoutes.contains(state.matchedLocation)) {
         return null;
-      } else if (publicRoutes.contains(state.subloc)) {
+      } else if (publicRoutes.contains(state.matchedLocation)) {
         // Is public route.
         if (userDataProvider.isUserLoggedIn()) {
           // User is logged in, redirect to home page.

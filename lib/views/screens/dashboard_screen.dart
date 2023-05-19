@@ -42,7 +42,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         children: [
           Text(
             lang.dashboard,
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -173,7 +173,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 padding: const EdgeInsets.only(right: kDefaultPadding * 0.5),
                                 child: Icon(
                                   Icons.visibility_rounded,
-                                  size: (themeData.textTheme.button!.fontSize! + 4.0),
+                                  size: (themeData.textTheme.labelLarge!.fontSize! + 4.0),
                                 ),
                               ),
                               const Text('View All'),

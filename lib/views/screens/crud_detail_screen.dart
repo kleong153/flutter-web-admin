@@ -31,7 +31,7 @@ class _CrudDetailScreenState extends State<CrudDetailScreen> {
 
   Future<bool> _getDataAsync() async {
     if (widget.id.isNotEmpty) {
-      await Future.delayed(const Duration(seconds: 2), () {
+      await Future.delayed(const Duration(seconds: 1), () {
         _formData.id = widget.id;
         _formData.item = 'Item name';
         _formData.price = '1234.99';
@@ -51,14 +51,14 @@ class _CrudDetailScreenState extends State<CrudDetailScreen> {
 
       final dialog = AwesomeDialog(
         context: context,
-        dialogType: DialogType.QUESTION,
+        dialogType: DialogType.question,
         title: lang.confirmSubmitRecord,
         width: kDialogWidth,
         btnOkText: lang.yes,
         btnOkOnPress: () {
           final d = AwesomeDialog(
             context: context,
-            dialogType: DialogType.SUCCES,
+            dialogType: DialogType.success,
             title: lang.recordSubmittedSuccessfully,
             width: kDialogWidth,
             btnOkText: 'OK',
@@ -82,14 +82,14 @@ class _CrudDetailScreenState extends State<CrudDetailScreen> {
 
     final dialog = AwesomeDialog(
       context: context,
-      dialogType: DialogType.INFO_REVERSED,
+      dialogType: DialogType.infoReverse,
       title: lang.confirmDeleteRecord,
       width: kDialogWidth,
       btnOkText: lang.yes,
       btnOkOnPress: () {
         final d = AwesomeDialog(
           context: context,
-          dialogType: DialogType.SUCCES,
+          dialogType: DialogType.success,
           title: lang.recordDeletedSuccessfully,
           width: kDialogWidth,
           btnOkText: 'OK',
@@ -119,7 +119,7 @@ class _CrudDetailScreenState extends State<CrudDetailScreen> {
         children: [
           Text(
             pageTitle,
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -224,7 +224,7 @@ class _CrudDetailScreenState extends State<CrudDetailScreen> {
                         padding: const EdgeInsets.only(right: kDefaultPadding * 0.5),
                         child: Icon(
                           Icons.arrow_circle_left_outlined,
-                          size: (themeData.textTheme.button!.fontSize! + 4.0),
+                          size: (themeData.textTheme.labelLarge!.fontSize! + 4.0),
                         ),
                       ),
                       Text(lang.crudBack),
@@ -250,7 +250,7 @@ class _CrudDetailScreenState extends State<CrudDetailScreen> {
                             padding: const EdgeInsets.only(right: kDefaultPadding * 0.5),
                             child: Icon(
                               Icons.delete_rounded,
-                              size: (themeData.textTheme.button!.fontSize! + 4.0),
+                              size: (themeData.textTheme.labelLarge!.fontSize! + 4.0),
                             ),
                           ),
                           Text(lang.crudDelete),
@@ -273,7 +273,7 @@ class _CrudDetailScreenState extends State<CrudDetailScreen> {
                         padding: const EdgeInsets.only(right: kDefaultPadding * 0.5),
                         child: Icon(
                           Icons.check_circle_outline_rounded,
-                          size: (themeData.textTheme.button!.fontSize! + 4.0),
+                          size: (themeData.textTheme.labelLarge!.fontSize! + 4.0),
                         ),
                       ),
                       Text(lang.submit),

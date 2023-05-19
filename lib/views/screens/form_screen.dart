@@ -33,7 +33,7 @@ class _FormScreenState extends State<FormScreen> {
         children: [
           Text(
             lang.forms(1),
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -310,8 +310,8 @@ class _FormScreenState extends State<FormScreen> {
                                 labelText: 'File Picker',
                                 border: OutlineInputBorder(),
                               ),
-                              selector: Row(
-                                children: const [
+                              selector: const Row(
+                                children: [
                                   Icon(Icons.file_upload),
                                   Text('Upload'),
                                 ],

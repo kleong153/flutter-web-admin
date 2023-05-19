@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       setState(() => _isFormLoading = true);
 
-      Future.delayed(const Duration(seconds: 2), () async {
+      Future.delayed(const Duration(seconds: 1), () async {
         if (_formData.username != 'admin' || _formData.password != 'admin') {
           onError.call('Invalid username or password.');
         } else {
@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
   void _onLoginError(BuildContext context, String message) {
     final dialog = AwesomeDialog(
       context: context,
-      dialogType: DialogType.ERROR,
+      dialogType: DialogType.error,
       desc: message,
       width: kDialogWidth,
       btnOkText: 'OK',
@@ -101,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     Text(
                       lang.appTitle,
-                      style: themeData.textTheme.headline4!.copyWith(
+                      style: themeData.textTheme.headlineMedium!.copyWith(
                         fontWeight: FontWeight.w600,
                       ),
                     ),

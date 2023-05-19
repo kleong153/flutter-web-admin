@@ -23,7 +23,7 @@ class ColorsScreen extends StatelessWidget {
         children: [
           Text(
             lang.colors(2),
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -43,7 +43,7 @@ class ColorsScreen extends StatelessWidget {
                           padding: const EdgeInsets.only(bottom: kTextPadding),
                           child: Text(
                             lang.colorScheme,
-                            style: themeData.textTheme.subtitle1,
+                            style: themeData.textTheme.titleMedium,
                           ),
                         ),
                         Padding(
@@ -102,7 +102,7 @@ class ColorsScreen extends StatelessWidget {
                           padding: const EdgeInsets.only(bottom: kTextPadding),
                           child: Text(
                             'App Color Scheme ${lang.extensions(1)}',
-                            style: themeData.textTheme.subtitle1,
+                            style: themeData.textTheme.titleMedium,
                           ),
                         ),
                         Padding(

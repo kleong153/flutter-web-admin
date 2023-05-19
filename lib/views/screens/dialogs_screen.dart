@@ -36,7 +36,7 @@ class DialogsScreen extends StatelessWidget {
         children: [
           Text(
             lang.dialogs(2),
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -66,32 +66,32 @@ class DialogsScreen extends StatelessWidget {
                           runSpacing: kDefaultPadding * 2.0,
                           children: [
                             ElevatedButton(
-                              onPressed: () => _showDialog(context, DialogType.INFO),
+                              onPressed: () => _showDialog(context, DialogType.info),
                               style: appButtonTheme.primaryElevated,
                               child: const Text('Info'),
                             ),
                             ElevatedButton(
-                              onPressed: () => _showDialog(context, DialogType.INFO_REVERSED),
+                              onPressed: () => _showDialog(context, DialogType.infoReverse),
                               style: appButtonTheme.primaryElevated,
                               child: const Text('Info Reversed'),
                             ),
                             ElevatedButton(
-                              onPressed: () => _showDialog(context, DialogType.WARNING),
+                              onPressed: () => _showDialog(context, DialogType.warning),
                               style: appButtonTheme.primaryElevated,
                               child: const Text('Warning'),
                             ),
                             ElevatedButton(
-                              onPressed: () => _showDialog(context, DialogType.ERROR),
+                              onPressed: () => _showDialog(context, DialogType.error),
                               style: appButtonTheme.primaryElevated,
                               child: const Text('Error'),
                             ),
                             ElevatedButton(
-                              onPressed: () => _showDialog(context, DialogType.SUCCES),
+                              onPressed: () => _showDialog(context, DialogType.success),
                               style: appButtonTheme.primaryElevated,
                               child: const Text('Success'),
                             ),
                             ElevatedButton(
-                              onPressed: () => _showDialog(context, DialogType.QUESTION),
+                              onPressed: () => _showDialog(context, DialogType.question),
                               style: appButtonTheme.primaryElevated,
                               child: const Text('Question'),
                             ),

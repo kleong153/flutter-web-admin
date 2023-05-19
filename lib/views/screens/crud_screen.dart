@@ -53,7 +53,7 @@ class _CrudScreenState extends State<CrudScreen> {
         children: [
           Text(
             'CRUD',
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -117,7 +117,7 @@ class _CrudScreenState extends State<CrudScreen> {
                                                   padding: const EdgeInsets.only(right: kDefaultPadding * 0.5),
                                                   child: Icon(
                                                     Icons.search,
-                                                    size: (themeData.textTheme.button!.fontSize! + 4.0),
+                                                    size: (themeData.textTheme.labelLarge!.fontSize! + 4.0),
                                                   ),
                                                 ),
                                                 Text(lang.search),
@@ -139,7 +139,7 @@ class _CrudScreenState extends State<CrudScreen> {
                                                 padding: const EdgeInsets.only(right: kDefaultPadding * 0.5),
                                                 child: Icon(
                                                   Icons.add,
-                                                  size: (themeData.textTheme.button!.fontSize! + 4.0),
+                                                  size: (themeData.textTheme.labelLarge!.fontSize! + 4.0),
                                                 ),
                                               ),
                                               Text(lang.crudNew),

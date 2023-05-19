@@ -54,6 +54,7 @@ class _RootAppState extends State<RootApp> {
 
                       return MaterialApp.router(
                         debugShowCheckedModeBanner: false,
+                        routeInformationProvider: _appRouter!.routeInformationProvider,
                         routeInformationParser: _appRouter!.routeInformationParser,
                         routerDelegate: _appRouter!.routerDelegate,
                         supportedLocales: Lang.delegate.supportedLocales,

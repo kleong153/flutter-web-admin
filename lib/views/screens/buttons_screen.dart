@@ -20,7 +20,7 @@ class ButtonsScreen extends StatelessWidget {
         children: [
           Text(
             lang.buttons(2),
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
@@ -124,9 +124,9 @@ class ButtonsScreen extends StatelessWidget {
       ElevatedButton(
         onPressed: () {},
         style: buttonStyle,
-        child: Row(
+        child: const Row(
           mainAxisSize: MainAxisSize.min,
-          children: const [
+          children: [
             Padding(
               padding: EdgeInsets.only(right: kTextPadding),
               child: Icon(Icons.account_circle_rounded),
@@ -180,9 +180,9 @@ class ButtonsScreen extends StatelessWidget {
       OutlinedButton(
         onPressed: () {},
         style: buttonStyle,
-        child: Row(
+        child: const Row(
           mainAxisSize: MainAxisSize.min,
-          children: const [
+          children: [
             Padding(
               padding: EdgeInsets.only(right: kTextPadding),
               child: Icon(Icons.account_circle_rounded),
@@ -236,9 +236,9 @@ class ButtonsScreen extends StatelessWidget {
       TextButton(
         onPressed: () {},
         style: buttonStyle,
-        child: Row(
+        child: const Row(
           mainAxisSize: MainAxisSize.min,
-          children: const [
+          children: [
             Padding(
               padding: EdgeInsets.only(right: kTextPadding),
               child: Icon(Icons.account_circle_rounded),

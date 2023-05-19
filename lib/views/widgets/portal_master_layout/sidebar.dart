@@ -379,7 +379,7 @@ class SidebarHeader extends StatelessWidget {
     return TextButton(
       onPressed: onPressed,
       style: TextButton.styleFrom(
-        primary: sidebarTheme.foregroundColor,
+        foregroundColor: sidebarTheme.foregroundColor,
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,

@@ -22,7 +22,7 @@ class GeneralUiScreen extends StatelessWidget {
         children: [
           Text(
             lang.generalUi,
-            style: themeData.textTheme.headline4,
+            style: themeData.textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.only(
@@ -214,7 +214,7 @@ class GeneralUiScreen extends StatelessWidget {
                           padding: const EdgeInsets.only(bottom: kDefaultPadding * 1.5),
                           child: Text(
                             'Mouseover text below to preview',
-                            style: themeData.textTheme.subtitle1,
+                            style: themeData.textTheme.titleMedium,
                           ),
                         ),
                         Wrap(
