@@ -5,9 +5,10 @@ Responsive web with light/dark mode and multi language supported. The objective 
 
 https://user-images.githubusercontent.com/12734486/174944388-5b80f3c6-187a-4e98-89e3-34180ac61379.mp4
 
+https://lh3.googleusercontent.com/pw/AIL4fc-DittJLn0jHohhzwxv5-_IMvi3v46FkiqPmPF4UTfqv6JNvDLXVuq5Kd_N1zgULN5pQDCak_BU4ovqybbmFSPgdjD_CX2hGhESWGE8XLz5lYeJJes=w1102-h522-no
 
 ## Live Preview
-[Website Demo](https://kcflutterwebadmin.surge.sh)
+
 
 Login with demo account:\
 Username: admin\
