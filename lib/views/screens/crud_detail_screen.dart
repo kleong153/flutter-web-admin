@@ -15,9 +15,9 @@ class CrudDetailScreen extends StatefulWidget {
   final String id;
 
   const CrudDetailScreen({
-    Key? key,
+    super.key,
     required this.id,
-  }) : super(key: key);
+  });
 
   @override
   State<CrudDetailScreen> createState() => _CrudDetailScreenState();

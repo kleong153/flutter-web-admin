@@ -10,7 +10,7 @@ import 'package:web_admin/views/widgets/portal_master_layout/portal_master_layou
 import 'package:web_admin/views/widgets/public_master_layout/public_master_layout.dart';
 
 class ErrorScreen extends StatelessWidget {
-  const ErrorScreen({Key? key}) : super(key: key);
+  const ErrorScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

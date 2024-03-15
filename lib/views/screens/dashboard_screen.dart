@@ -10,7 +10,7 @@ import 'package:web_admin/views/widgets/card_elements.dart';
 import 'package:web_admin/views/widgets/portal_master_layout/portal_master_layout.dart';
 
 class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({Key? key}) : super(key: key);
+  const DashboardScreen({super.key});
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();
@@ -203,7 +203,7 @@ class SummaryCard extends StatelessWidget {
   final double width;
 
   const SummaryCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.value,
     required this.icon,
@@ -211,7 +211,7 @@ class SummaryCard extends StatelessWidget {
     required this.textColor,
     required this.iconColor,
     required this.width,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

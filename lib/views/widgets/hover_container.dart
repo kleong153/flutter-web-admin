@@ -6,11 +6,11 @@ class HoverContainer extends StatefulWidget {
   final Widget? child;
 
   const HoverContainer({
-    Key? key,
+    super.key,
     required this.hoverColor,
     this.builder,
     required this.child,
-  }) : super(key: key);
+  });
 
   @override
   State<HoverContainer> createState() => _HoverContainerState();

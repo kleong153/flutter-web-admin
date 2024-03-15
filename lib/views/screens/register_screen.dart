@@ -13,7 +13,7 @@ import 'package:web_admin/utils/app_focus_helper.dart';
 import 'package:web_admin/views/widgets/public_master_layout/public_master_layout.dart';
 
 class RegisterScreen extends StatefulWidget {
-  const RegisterScreen({Key? key}) : super(key: key);
+  const RegisterScreen({super.key});
 
   @override
   State<RegisterScreen> createState() => _RegisterScreenState();

@@ -10,7 +10,7 @@ import 'package:web_admin/views/widgets/text_with_copy_button.dart';
 import 'package:web_admin/views/widgets/url_new_tab_launcher.dart';
 
 class TextScreen extends StatelessWidget {
-  const TextScreen({Key? key}) : super(key: key);
+  const TextScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

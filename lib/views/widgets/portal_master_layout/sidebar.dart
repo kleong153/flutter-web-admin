@@ -41,13 +41,13 @@ class Sidebar extends StatefulWidget {
   final List<SidebarMenuConfig> sidebarConfigs;
 
   const Sidebar({
-    Key? key,
+    super.key,
     this.autoSelectMenu = true,
     this.selectedMenuUri,
     required this.onAccountButtonPressed,
     required this.onLogoutButtonPressed,
     required this.sidebarConfigs,
-  }) : super(key: key);
+  });
 
   @override
   State<Sidebar> createState() => _SidebarState();
@@ -138,7 +138,7 @@ class _SidebarState extends State<Sidebar> {
     var currentLocation = widget.selectedMenuUri ?? '';
 
     if (currentLocation.isEmpty && widget.autoSelectMenu) {
-      currentLocation = GoRouter.of(context).location;
+      currentLocation = GoRouter.of(context).routerDelegate.currentConfiguration.uri.toString();
     }
 
     return Column(
@@ -308,10 +308,10 @@ class SidebarHeader extends StatelessWidget {
   final void Function() onLogoutButtonPressed;
 
   const SidebarHeader({
-    Key? key,
+    super.key,
     required this.onAccountButtonPressed,
     required this.onLogoutButtonPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

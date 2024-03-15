@@ -1,6 +1,6 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
-import 'dart:ui' as ui;
+import 'dart:ui_web' as ui_web;
 
 import 'package:flutter/material.dart';
 import 'package:pointer_interceptor/pointer_interceptor.dart';
@@ -10,7 +10,7 @@ import 'package:web_admin/views/widgets/card_elements.dart';
 import 'package:web_admin/views/widgets/portal_master_layout/portal_master_layout.dart';
 
 class IFrameDemoScreen extends StatefulWidget {
-  const IFrameDemoScreen({Key? key}) : super(key: key);
+  const IFrameDemoScreen({super.key});
 
   @override
   State<IFrameDemoScreen> createState() => _IFrameDemoScreenState();
@@ -139,11 +139,11 @@ class HtmlIFrame extends StatelessWidget {
   final int width;
 
   const HtmlIFrame({
-    Key? key,
+    super.key,
     required this.url,
     required this.height,
     required this.width,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -158,7 +158,7 @@ class HtmlIFrame extends StatelessWidget {
     final viewType = 'iframeElement_$url';
 
     // ignore: undefined_prefixed_name
-    ui.platformViewRegistry.registerViewFactory(
+    ui_web.platformViewRegistry.registerViewFactory(
       viewType,
       (int viewId) => iframe,
     );

@@ -25,6 +25,7 @@ class AppThemeData {
 
   ThemeData light() {
     final themeData = ThemeData(
+      useMaterial3: false,
       appBarTheme: const AppBarTheme(
         iconTheme: IconThemeData(color: Colors.white),
         backgroundColor: kPrimaryColor,
@@ -105,7 +106,7 @@ class AppThemeData {
   }
 
   ThemeData dark() {
-    final themeData = ThemeData.dark().copyWith(
+    final themeData = ThemeData.dark(useMaterial3: false).copyWith(
       drawerTheme: const DrawerThemeData(backgroundColor: Color(0xFF343A40)),
       appBarTheme: const AppBarTheme(
         iconTheme: IconThemeData(color: Colors.white),

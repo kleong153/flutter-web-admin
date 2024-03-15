@@ -11,13 +11,13 @@ class TextWithCopyButton extends StatelessWidget {
   final Color? copyIconColor;
 
   const TextWithCopyButton({
-    Key? key,
+    super.key,
     required this.textWidget,
     required this.textToCopy,
     this.textWidgetRightPadding = kTextPadding,
     this.copyIconSize,
     this.copyIconColor,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

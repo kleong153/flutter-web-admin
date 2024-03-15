@@ -14,13 +14,13 @@ class UrlNewTabLauncher extends StatelessWidget {
   final double displayTextRightPadding;
 
   const UrlNewTabLauncher({
-    Key? key,
+    super.key,
     required this.displayText,
     required this.url,
     this.fontColor,
     this.fontSize = 14.0,
     this.displayTextRightPadding = kTextPadding,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

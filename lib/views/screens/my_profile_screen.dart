@@ -10,7 +10,7 @@ import 'package:web_admin/views/widgets/card_elements.dart';
 import 'package:web_admin/views/widgets/portal_master_layout/portal_master_layout.dart';
 
 class MyProfileScreen extends StatefulWidget {
-  const MyProfileScreen({Key? key}) : super(key: key);
+  const MyProfileScreen({super.key});
 
   @override
   State<MyProfileScreen> createState() => _MyProfileScreenState();

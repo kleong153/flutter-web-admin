@@ -5,7 +5,7 @@ import 'package:web_admin/app_router.dart';
 import 'package:web_admin/providers/user_data_provider.dart';
 
 class LogoutScreen extends StatefulWidget {
-  const LogoutScreen({Key? key}) : super(key: key);
+  const LogoutScreen({super.key});
 
   @override
   State<LogoutScreen> createState() => _LogoutScreenState();

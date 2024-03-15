@@ -9,13 +9,13 @@ class CardHeader extends StatelessWidget {
   final EdgeInsets padding;
 
   const CardHeader({
-    Key? key,
+    super.key,
     required this.title,
     this.titleColor,
     this.backgroundColor,
     this.padding = const EdgeInsets.all(kDefaultPadding),
     this.showDivider = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -52,10 +52,10 @@ class CardBody extends StatelessWidget {
   final EdgeInsets padding;
 
   const CardBody({
-    Key? key,
+    super.key,
     required this.child,
     this.padding = const EdgeInsets.all(kDefaultPadding),
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

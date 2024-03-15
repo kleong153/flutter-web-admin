@@ -11,7 +11,7 @@ import 'package:web_admin/theme/themes.dart';
 import 'package:web_admin/utils/app_focus_helper.dart';
 
 class RootApp extends StatefulWidget {
-  const RootApp({Key? key}) : super(key: key);
+  const RootApp({super.key});
 
   @override
   State<RootApp> createState() => _RootAppState();

@@ -12,7 +12,7 @@ import 'package:web_admin/views/widgets/card_elements.dart';
 import 'package:web_admin/views/widgets/portal_master_layout/portal_master_layout.dart';
 
 class CrudScreen extends StatefulWidget {
-  const CrudScreen({Key? key}) : super(key: key);
+  const CrudScreen({super.key});
 
   @override
   State<CrudScreen> createState() => _CrudScreenState();

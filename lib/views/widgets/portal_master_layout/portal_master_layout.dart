@@ -33,7 +33,7 @@ class PortalMasterLayout extends StatelessWidget {
   final List<Widget>? persistentFooterButtons;
 
   const PortalMasterLayout({
-    Key? key,
+    super.key,
     required this.body,
     this.autoSelectMenu = true,
     this.selectedMenuUri,
@@ -42,7 +42,7 @@ class PortalMasterLayout extends StatelessWidget {
     this.floatingActionButtonLocation,
     this.floatingActionButtonAnimator,
     this.persistentFooterButtons,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -209,9 +209,9 @@ class ResponsiveAppBarTitle extends StatelessWidget {
   final void Function() onAppBarTitlePressed;
 
   const ResponsiveAppBarTitle({
-    Key? key,
+    super.key,
     required this.onAppBarTitlePressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

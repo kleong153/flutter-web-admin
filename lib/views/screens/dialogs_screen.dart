@@ -8,7 +8,7 @@ import 'package:web_admin/views/widgets/portal_master_layout/portal_master_layou
 import 'package:web_admin/views/widgets/url_new_tab_launcher.dart';
 
 class DialogsScreen extends StatelessWidget {
-  const DialogsScreen({Key? key}) : super(key: key);
+  const DialogsScreen({super.key});
 
   void _showDialog(BuildContext context, DialogType dialogType) {
     final dialog = AwesomeDialog(

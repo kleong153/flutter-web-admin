@@ -6,7 +6,7 @@ import 'package:web_admin/views/widgets/card_elements.dart';
 import 'package:web_admin/views/widgets/portal_master_layout/portal_master_layout.dart';
 
 class ButtonsScreen extends StatelessWidget {
-  const ButtonsScreen({Key? key}) : super(key: key);
+  const ButtonsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

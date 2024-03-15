@@ -14,7 +14,7 @@ import 'package:web_admin/utils/app_focus_helper.dart';
 import 'package:web_admin/views/widgets/public_master_layout/public_master_layout.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();

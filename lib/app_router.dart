@@ -152,7 +152,7 @@ GoRouter appRouter(UserDataProvider userDataProvider) {
         pageBuilder: (context, state) {
           return NoTransitionPage<void>(
             key: state.pageKey,
-            child: CrudDetailScreen(id: state.queryParameters['id'] ?? ''),
+            child: CrudDetailScreen(id: state.uri.queryParameters['id'] ?? ''),
           );
         },
       ),

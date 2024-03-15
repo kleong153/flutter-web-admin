@@ -9,7 +9,7 @@ import 'package:web_admin/views/widgets/portal_master_layout/portal_master_layou
 import 'package:web_admin/views/widgets/text_with_copy_button.dart';
 
 class ColorsScreen extends StatelessWidget {
-  const ColorsScreen({Key? key}) : super(key: key);
+  const ColorsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

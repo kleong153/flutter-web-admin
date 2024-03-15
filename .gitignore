@@ -10,6 +10,7 @@
 .svn/
 migrate_working_dir/
 .fvm/
+.fvmrc
 
 # IntelliJ related
 *.iml
@@ -34,7 +35,6 @@ migrate_working_dir/
 /build/
 
 # Web related
-lib/generated_plugin_registrant.dart
 
 # Symbolication related
 app.*.symbols
